@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result</title>
+</head>
+<body>
+    <h1>Analysis Result</h1>
+    <p>AI-generated content percentage: {{ ai_percentage }}%</p>
+    <h2>AI-generated content:</h2>
+    <ul>
+        {% for content in ai_content %}
+            <li>{{ content }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
