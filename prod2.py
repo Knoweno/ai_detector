@@ -1,7 +1,12 @@
 import openai
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Replace with your OpenAI API key
-openai.api_key = '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'
+openai.api_key = os.getenv("OPENAI_SECRET_KEY")
 
 def chatbot_prompt(prompt):
     response = openai.ChatCompletion.create(
